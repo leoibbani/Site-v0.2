@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: white;
+  color: #070707;
+}
+
+img {
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6.5em;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+h3 {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+.top {
+  padding-top: 50px;
+}
+.topcloud {
+  position: absolute;
+  top: 10%;
+  right: 300px;
+}
+
+.bottomcloud {
+  position: absolute;
+}
+
+.little-image {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
