@@ -21,8 +21,8 @@ section{
   place-items: center;
 }
 
-img {
-  display: inline-block;
+span{
+  text-underline-position: under;
 }
 
 h1 {
@@ -34,40 +34,14 @@ h2 {
   font-weight: normal;
 }
 
-h3 {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
+h4 {
+  color: #D19A66;
 }
 
-.top {
-  padding-top: 50px;
-}
-.topcloud {
-  position: absolute;
-  top: 10%;
-  right: 300px;
-  opacity: 0.3;
-}
-
-.bottomcloud {
-  position: absolute;
-}
-
-.little-image {
-  height: 25px;
-  width: 25px;
-  display: inline-block;
-  vertical-align: bottom;
+p {
+  color: #98C379;
 }
 
 .underline {
   text-decoration: underline;
-}
-
-.skill-row{
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  line-height: 2;
 }
