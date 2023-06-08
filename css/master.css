@@ -22,10 +22,6 @@ section{
   place-items: center;
 }
 
-u {
-  color: #FFD700;
-}
-
 h1 {
   font-size: 1000%;
   color: #ABB2BF;
@@ -51,8 +47,4 @@ p {
   color: #FFD700;
   text-decoration: underline #FFD700;
   font-size: 300%;
-}
-
-.underline {
-  text-decoration: underline;
 }
