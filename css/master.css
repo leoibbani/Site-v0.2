@@ -10,6 +10,17 @@ body {
    #D19A66 arancione*/
 }
 
+html{
+  scroll-snap-type: y mandatory;
+}
+section{
+  block-size: 100vh;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  display: grid;
+  place-items: center;
+}
+
 img {
   display: inline-block;
 }
