@@ -22,17 +22,17 @@ section{
   place-items: center;
 }
 
-span{
-  text-decoration: underline overline #FFD700;
+u {
+  color: #FFD700;
 }
 
 h1 {
-  font-size: 6.5em;
+  font-size: 1000%;
   color: #ABB2BF;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 400%;
   font-weight: normal;
   color: #ABB2BF;
 }
@@ -43,11 +43,14 @@ h4 {
 
 p {
   color: #98C379;
+  font-size: 175%;
+  width: 50%;
 }
 
-.mail{
+.mail {
   color: #FFD700;
-  text-decoration: underline;
+  text-decoration: underline #FFD700;
+  font-size: 300%;
 }
 
 .underline {
