@@ -1,9 +1,13 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: white;
-  color: #070707;
+  font-family: "Monaco", Arial, sans-serif;
+  background-color: #282C34;
+  color: #ABB2BF;
+ /*#FFD700 giallo
+   #E06C75 rosso
+   #98C379 verde
+   #D19A66 arancione*/
 }
 
 img {
