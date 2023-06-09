@@ -48,3 +48,9 @@ p {
   text-decoration: underline #FFD700;
   font-size: 3em;
 }
+
+@media (max-width: 1050px) {
+  body{
+    display: none;
+  }
+}
