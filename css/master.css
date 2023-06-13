@@ -4,17 +4,18 @@ body {
   font-family: "Monaco", Arial, sans-serif;
   background-color: #282C34;
 
- /*  color: #ABB2BF;
+  /*  color: #ABB2BF;
   #FFD700 giallo
    #E06C75 rosso
    #98C379 verde
    #D19A66 arancione*/
 }
 
-html{
+html {
   scroll-snap-type: y mandatory;
 }
-section{
+
+section {
   block-size: 100vh;
   scroll-snap-align: center;
   scroll-snap-stop: always;
@@ -50,12 +51,12 @@ p {
 }
 
 @media (max-width: 1050px) {
-  
+
   h2 {
     font-size: 8em;
   }
 
-  p{
+  p {
     margin-top: 0%;
     margin-bottom: 50%;
     font-size: 2.75em;
@@ -63,10 +64,10 @@ p {
   }
 
   a {
-      margin-top: 0%;
-      margin-bottom: 50%;
-      font-size: 2.75em;
-      width: 90%;
+    margin-top: 0%;
+    margin-bottom: 50%;
+    font-size: 2.75em;
+    width: 90%;
   }
 
 }
