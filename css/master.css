@@ -44,6 +44,10 @@ p {
   width: 50%;
 }
 
+a {
+  color: #FFD700;
+}
+
 .mail {
   color: #FFD700;
   text-decoration: underline #FFD700;
