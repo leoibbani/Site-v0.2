@@ -1,33 +1,20 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: ofelia-text, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
-  background-color: #282C34;
-
-  /*  color: #ABB2BF;
-  #FFD700 giallo
-   #E06C75 rosso
-   #98C379 verde
-   #D19A66 arancione*/
+  background-color: white;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
 
 section {
   block-size: 100vh;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  display: grid;
-  place-items: center;
 }
 
 h1 {
   font-size: 10em;
-  color: #ABB2BF;
+  color: #165dbd;
 }
 
 h2 {
