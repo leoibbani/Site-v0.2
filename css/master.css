@@ -1,8 +1,6 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  background-color: white;
+@font-face {
+  font-family: OpenSans;
+  src: url('/font/OpenSans-Regular.ttf');
 }
 
 @media only screen and (max-width: 600px) {
