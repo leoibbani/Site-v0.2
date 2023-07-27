@@ -11,6 +11,15 @@
   
 }
 
+.overmail::after {
+  content: "Contact Me";
+  }
+
+.overmail:hover::after{
+  content-visibility: hidden;
+  content: "at info@leonardobani.it";
+}
+
 
 .portfoliocard{
   border-color: #0d6efd;
