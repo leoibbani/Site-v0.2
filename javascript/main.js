@@ -10,6 +10,6 @@ button.addEventListener("click", () => {
 
   // Apri l'applicazione delle mail
   const mailto =
-    "mailto:info@leonardobani.it?subject=Ciao, ho bisogno di un sito!";
+    "mailto:info@leonardobani.it?subject=Ciao Leo!";
   window.location.href = mailto;
 });
