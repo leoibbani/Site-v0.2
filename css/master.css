@@ -13,12 +13,20 @@
     display: none;
   }
 
-  
+  .bigliettodavisita{
+    padding: 15px;
+    margin: 0 auto 0;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
   .mobileonly{
     display: none;
+  }
+
+  .bigliettodavisita{
+    max-width: 75%;
   }
 }
 
