@@ -246,10 +246,9 @@
 
 
 
-
-  <div class="container">
-    <!-- Desktop Only -->
-    <div class="container my-5 bigliettodavisita desktoponly">
+  <!-- Biglietto da visita  Desktop-->
+  <div class="container desktoponly">
+    <div class="container my-5 bigliettodavisita">
       <div class="bigliettodavisita text-center rounded-3 shadow-lg">
         <img class="bi mt-4 mb-3" src="/images/LB_logo_192.png" width="100" height="100" alt="Leonardo Bani Logo">
         <h1 class="text-body-emphasis">What are you waiting for?</h1>
@@ -272,7 +271,7 @@
     <div class="rounded-3 text-center shadow-lg m-auto pb-2" style="border: solid 1px #0d6efd;">
       <img class="d-block mt-4 mb-3 m-auto text-center" src="/images/LB_logo_192.png" width="100" height="100"
         alt="Leonardo Bani Logo">
-      <button class="mb-2 shadow-lg m-auto align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+      <button id="showmail" class="mb-2 shadow-lg m-auto align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
         Contact Me Now!
       </button>
     </div>
@@ -301,6 +300,7 @@
   </div>
 
   <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="/javascript/main.js"></script>
   <script src="/javascript/coockies.js"></script>
 
@@ -310,7 +310,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-7TW8S73GZW');
   </script>
 </body>
