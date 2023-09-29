@@ -69,6 +69,11 @@
     margin: auto;
     text-align: center;
   }
+
+  .worksProjectsButtons{
+    max-width: 50%;
+    margin: auto;
+  }
 }
 
 
@@ -79,7 +84,15 @@
     margin: auto;
     text-align: center;
   }
+
+  .worksProjectsButtons{
+    width: 50%;
+    margin: auto;
+  }
 }
+
+
+
 
 .albumcard{
   border: 1px;
