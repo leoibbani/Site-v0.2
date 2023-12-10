@@ -22,10 +22,10 @@
 
 
 <body>
-
+  <!-- Cookies -->
   <div class="cookies-eu-banner hidden border-top align-content-center">
-    We use only Performance & Google Analytics cookies, We care your Privacy.
-    <button class="btn btn-success">Thanks</button>
+    Usiamo solo cookie necessari e Google Analytics, ci sta a ❤ la tua privacy.
+    <button class="btn btn-success">Grazie</button>
   </div>
 
   <!-- NavBar -->
@@ -37,8 +37,8 @@
           data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
       </li>
       <li style="width: 35%;" class="nav-item" role="presentation">
-        <button onclick="location.href='/album.html'" class="nav-link rounded-5" id="profile-tab2"
-          data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Album</button>
+        <button onclick="location.href='/album.html'" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab"
+          type="button" role="tab" aria-selected="false">Album</button>
       </li>
     </ul>
   </div>
@@ -54,15 +54,12 @@
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 mobilecenter">Leonardo Bani</h1>
         <p id="lastname" class="lead mobilecenter">Web Developer</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" id="showmail" class="btn btn-primary btn-lg px-4 me-md-2">Contact Me</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4"
-            onclick="location.href='https://linkedin.com/in/leonardo-bani/'"><img class="bi" width="24" height="24"
-              src="/icons/linkedin.svg" alt="Linkedin Icon">
+          <button type="button" id="showmail" class="btn btn-primary btn-lg px-4 me-md-2">Contattami
+            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/envelope-arrow-up.svg" alt="envelope-arrow-up">
           </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4"
-            onclick="location.href='https://github.com/leonardobani'"><img class="bi" width="24" height="24"
-              src="/icons/github.svg" alt="Linkedin Icon">
-          </button>
+          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+            onclick="location.href='/services.html'">Scopri servizi</button>
+          </button> -->
         </div>
       </div>
     </div>
@@ -70,7 +67,7 @@
 
   <!-- Features -->
   <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Why me?</h2>
+    <h2 class="pb-2 border-bottom">Caratteristiche</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div
@@ -78,9 +75,8 @@
           <img style="width: 50px;" src="/icons/brush.svg" alt="Brush">
         </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">Customization</h3>
-          <p>No builder or generator means no limits to how you can customize your website, opening up endless
-            possibilities.</p>
+          <h3 class="fs-2 text-body-emphasis">Personalizzazione</h3>
+          <p>Nessun costruttore o generatore significa nessun limite al modo in cui puoi personalizzare il tuo sito web, aprendo infinite possibilità.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
@@ -90,8 +86,7 @@
         </div>
         <div>
           <h3 class="fs-2 text-body-emphasis">Performance</h3>
-          <p>Using the full potential of programming it is possible to build a high performance site that adapts to
-            every viewport</p>
+          <p>Sfruttando tutto il potenziale della programmazione è possibile costruire un sito ad alte prestazioni che si adatta ad ogni dispositivo</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
@@ -100,17 +95,52 @@
           <img style="width: 50px;" src="/icons/gear.svg" alt="Gear">
         </div>
         <div>
-          <h3 class="fs-2 text-body-emphasis">Easy to Maintain</h3>
-          <p>Coded website are easier to maintain and update because you can directly edit the source code and make
-            changes as you wish, without relying on a third-party tool or service.</p>
+          <h3 class="fs-2 text-body-emphasis">Facile da mantenere</h3>
+          <p>I siti Web programmati sono più facili da mantenere e aggiornare perché puoi modificare direttamente il codice sorgente e cambiarlo come desideri, senza fare affidamento su uno strumento o servizio di terze parti.</p>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Github Desktop-->
+  <div class="container px-4 py-5 desktoponly">
+    <h2 class="pb-2 border-bottom">Leo & Github</h2>
+    <div class="d-flex p-4 m-4 justify-content-around align-items-center flex-wrap ">
+      <img class="gitHubSectionsIcons my-3" src="/images/LB_logo_192.webp" alt="Logo">
+      <img class="gitHubSectionsIcons my-3" src="/icons/plus-lg.svg" alt="+">
+      <img class="gitHubSectionsIcons my-3" src="/icons/github.svg" alt="Github icon">
+      <img class="gitHubSectionsIcons my-3" src="/icons/Equal_symbol.svg" alt="=">
+      <img class="gitHubSectionsIcons my-3" src="/icons/shield-check.svg" alt="Security">
+    </div>
+    <h3 class="pt-3 text-center">Goditi un servizio di hosting unico grazie alla collaborazione con Github.</h3>
+    <ul class="pt-3 text-center" style="list-style: none; width: 50%; margin: auto;">
+      <li class="pt-3">Tra i più sicuri al mondo con la migliore tecnologia Microsoft. 🔒</li>
+      <li class="pt-3">Una velocità di caricamento eccezionale. 🚀</li>
+      <li class="pt-3">Un sistema di controllo di versione. 📦</li>
+      <li class="pt-3">Completamente gratuito per voi. 💸</li>
+    </ul>
+  </div>
+
+  <!-- Github Mobile -->
+  <div class="container px-4 py-5 mobileonly">
+    <h2 class="pb-2 border-bottom">Leo & Github</h2>
+    <div class="d-flex justify-content-around align-items-center flex-wrap mobileonly pt-3">
+      <img class=" my-3" width="75px" height="75px" src="/images/LB_logo_192.webp" alt="Logo">
+      <img class=" my-3" width="35px" src="/icons/plus-lg.svg" alt="+">
+      <img class=" my-3" width="75px" height="75px" src="/icons/github.svg" alt="Github icon" onclick="location.href='https://github.com/LeonardoBani'">
+    </div>
+    <h3 class="pt-3 text-center">Goditi un servizio di hosting unico grazie alla collaborazione con Github.</h3>
+    <ul class="pt-3 text-left" style="list-style: circle;">
+      <li class="pt-3">Tra i più sicuri al mondo con la migliore tecnologia Microsoft. 🔒</li>
+      <li class="pt-3">Una velocità di caricamento eccezionale. 🚀</li>
+      <li class="pt-3">Un sistema di controllo di versione. 📦</li>
+      <li class="pt-3">Completamente gratuito per voi. 💸</li>
+    </ul>
+  </div>
+
   <!-- Portfolio -->
   <div class="container px-4" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Last Works</h2>
+    <h2 class="pb-2 border-bottom">Ultimi Lavori</h2>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4" style="padding-bottom: 48px; padding-top: 48px;">
 
       <div class="col text-center">
@@ -120,7 +150,7 @@
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Niccolò</p>
             <p class="display-6 fw-bold">Leone</p>
-            <p><img class="whitesvg" src="icons/buildings.svg" alt="work at:"> Photographer</p>
+            <p><img class="whitesvg" src="icons/buildings.svg" alt="work at:"> Fotografo</p>
             <button class="border rounded btn btn-primary"
               onclick="location.href='https://niccoleone.com/'">niccoleone.com
             </button>
@@ -135,7 +165,7 @@
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <p class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Fabio</p>
             <p class="display-6 fw-bold">Fanfani</p>
-            <p><img class="whitesvg" src="icons/buildings.svg" alt="work at:"> Jeweler</p>
+            <p><img class="whitesvg" src="icons/buildings.svg" alt="work at:"> Orafo</p>
             <button class="border rounded btn btn-primary"
               onclick="location.href='https://fabiofanfani.it/'">fabiofanfani.it
             </button>
@@ -159,13 +189,14 @@
         </div>
       </div> -->
 
-      <button class="btn btn-primary" onclick="location.href='/album.html'" style="width: 50%; margin: auto; margin-top: 30px;">See More</button>
+      <button class="btn btn-primary" onclick="location.href='/album.html'"
+        style="width: 50%; margin: auto; margin-top: 30px;">Scopri di più</button>
     </div>
   </div>
 
   <!-- Certificates MOBILE-->
   <div class="container px-4 mobileonly" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Certificates</h2>
+    <h2 class="pb-2 border-bottom">Certificati</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col-lg-4 text-center">
         <img class="rounded-circle certificatesimages" src="/images/appbrewery.webp" alt="Angela Yu Udemy"
@@ -182,10 +213,10 @@
         <p><a class="btn btn-primary" href="/certificates/Master_E-Commerce.jpg">View</a></p>
       </div>
       <div class="col-lg-4 text-center">
-        <img class="rounded-circle certificatesimages" src="/images/Unifi_logopng.png" alt="UNIFI logo" loading="lazy">
+        <img class="rounded-circle certificatesimages" src="/images/Unifi_logo.webp" alt="UNIFI logo" loading="lazy">
         <h2 class="fw-normal">UNIFI</h2>
         <p>Laurea in Ingegneria Informatica</p>
-        <p><a class="btn btn-primary" href="/images/Unifi_logopng.png">coming soon</a></p>
+        <p><a class="btn btn-primary" href="/images/Unifi_logo.webp">coming soon</a></p>
       </div>
     </div>
   </div>
@@ -193,11 +224,11 @@
 
   <!-- Certificates DESKTOP -->
   <div class="container px-4 desktoponly" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Certificates</h2>
+    <h2 class="pb-2 border-bottom">Certificati</h2>
     <div class="text-center g-4 py-5">
       <div class="row">
         <div class="col">
-          <img class="rounded-circle certificatesimages" src="/images/Unifi_logopng.png" alt="UNIFI logo">
+          <img class="rounded-circle certificatesimages" src="/images/Unifi_logo.webp" alt="UNIFI logo">
         </div>
         <div class="col">
           <img class="rounded-circle certificatesimages" src="/images/appbrewery.webp" alt="Angela Yu Udemy"
@@ -250,15 +281,15 @@
   <div class="container desktoponly">
     <div class="container my-5 bigliettodavisita">
       <div class="bigliettodavisita text-center rounded-3 shadow-lg">
-        <img class="bi mt-4 mb-3" src="/images/LB_logo_192.png" width="100" height="100" alt="Leonardo Bani Logo">
-        <h1 class="shower text-body-emphasis">What are you waiting for?</h1>
+        <img class="bi mt-4 mb-3" src="/images/LB_logo_192.webp" width="100" height="100" alt="Leonardo Bani Logo">
+        <h1 class="shower text-body-emphasis">Cosa stai aspettando?</h1>
         <p class="col-lg-8 mx-auto fs-5 text-muted">
-          Boost your presence online now. Contact me now, explain your project and let's start working together!
-        </p>
+          Migliora la tua presenza online. Spiegami il tuo progetto e iniziamo a lavorare insieme!        </p>
         <div class="d-inline-flex gap-2 mb-5">
-          <button type="button" class="showmail d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" >
-            Contact Me Now!
-            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/arrow-right-short.svg" alt="Right arrow">
+          <button type="button"
+            class="showmail d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill">
+            Contattami
+            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/envelope-arrow-up.svg" alt="envelope-arrow-up">
           </button>
         </div>
       </div>
@@ -267,17 +298,18 @@
 
   <!-- Mobile Only -->
   <div class="container my-5 mobileonly" style="width: 90%;">
-    <h1 class="shower my-3 text-body-emphasis text-center">What are you waiting for?</h1>
+    <h1 class="shower my-3 text-body-emphasis text-center">Cosa stai aspettando?</h1>
     <div class="rounded-3 text-center shadow-lg m-auto pb-2" style="border: solid 1px #0d6efd;">
-      <img class="d-block mt-4 mb-3 m-auto text-center" src="/images/LB_logo_192.png" width="100" height="100"
+      <img class="d-block mt-4 mb-3 m-auto text-center" src="/images/LB_logo_192.webp" width="100" height="100"
         alt="Leonardo Bani Logo">
-      <button type="button" class="showmail mb-2 shadow-lg m-auto align-items-center btn btn-primary btn-lg px-4 rounded-pill" >
-        Contact Me Now!
+      <button type="button"
+        class="showmail mb-2 shadow-lg m-auto align-items-center btn btn-primary btn-lg px-4 rounded-pill">
+        Contattami!
       </button>
     </div>
     <div>
       <p class="mt-3 mb-4 text-center fs-5 text-muted">
-        Boost your presence online now. Contact me now, explain your project and let's start working together!
+        Migliora la tua presenza online. Spiegami il tuo progetto e iniziamo a lavorare insieme!
       </p>
     </div>
   </div>
@@ -290,14 +322,13 @@
       <code class="m-1 mb-md-0 text-body-secondary">bani.leonardo@pec.it</code>
       <code class="m-1 mb-md-0 text-body-secondary">07242570484</code>
       <div class="align-content-">
-      <a class="text-body-secondary d-inline-block m-2" href="https://linkedin.com/in/leonardo-bani/"><img class="bi" width="24"
-        height="24" src="/icons/linkedin.svg" alt="Linkedin Icon">
-      <a class="text-body-secondary d-inline-block m-2" href="https://github.com/leonardobani"><img class="bi" width="24" height="24"
-        src="/icons/github.svg" alt="Github Icon">
+        <a class="text-body-secondary d-inline-block m-2" href="https://linkedin.com/in/leonardo-bani/"><img class="bi"
+            width="24" height="24" src="/icons/linkedin.svg" alt="Linkedin Icon">
+        <a class="text-body-secondary d-inline-block m-2" href="https://github.com/leonardobani"><img class="bi"
+          width="24" height="24" src="/icons/github.svg" alt="Github Icon">
       </div>
     </div>
   </footer>
-  </div>
 
   <!-- javascript -->
   <script src="/javascript/main.js"></script>
