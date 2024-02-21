@@ -1,60 +1,55 @@
 fetch("/components/cookies/cookies.html")
   .then((response) => response.text())
   .then((html) => {
-    // Append the fetched HTML content to the cookie-banner div
     document.getElementById("cookie-banner").innerHTML += html;
 
-    // Once the HTML is loaded, execute the following JavaScript
-
-    // Function to set a cookie
-    function setCookie(name, value, days) {
-      var expires = "";
-      if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-        expires = "; expires=" + date.toUTCString();
+    (() => {
+      const getCookie = (name) => {
+        const value = " " + document.cookie;
+        console.log("value", `==${value}==`);
+        const parts = value.split(" " + name + "=");
+        return parts.length < 2 ? undefined : parts.pop().split(";").shift();
+      };
+    
+      const setCookie = function (name, value, expiryDays, domain, path, secure) {
+        const exdate = new Date();
+        exdate.setHours(
+          exdate.getHours() +
+            (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+        );
+        document.cookie =
+          name +
+          "=" +
+          value +
+          ";expires=" +
+          exdate.toUTCString() +
+          ";path=" +
+          (path || "/") +
+          (domain ? ";domain=" + domain : "") +
+          (secure ? ";secure" : "");
+      };
+    
+      const $cookiesBanner = document.querySelector(".cookies-eu-banner");
+      const $cookiesBannerButton = $cookiesBanner.querySelector("button");
+      const cookieName = "cookiesBanner";
+      const hasCookie = getCookie(cookieName);
+    
+      if (!hasCookie) {
+        $cookiesBanner.classList.remove("hidden");
       }
-      document.cookie = name + "=" + (value || "") + expires + "; path=/";
-      console.log("setCookie");
-    }
+    
+      $cookiesBannerButton.addEventListener("click", () => {
+        setCookie(cookieName, "closed");
+        $cookiesBanner.remove();
+      });
+    })();
 
-    // Function to check if a cookie exists
-    function getCookie(name) {
-      var nameEQ = name + "=";
-      var cookies = document.cookie.split(";");
-      for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        while (cookie.charAt(0) == " ") {
-          cookie = cookie.substring(1, cookie.length);
-        }
-        if (cookie.indexOf(nameEQ) == 0) {
-          return cookie.substring(nameEQ.length, cookie.length);
-        }
-      }
-      console.log("getCookie");
-      return null;
-    }
 
-    // Function to handle the click event on the accept cookies button
-    function acceptCookies() {
-      setCookie("cookies_accepted", "true", 30); // Set cookie for 30 days
-      hideCookieBanner();
-      console.log("Cookie banner accepted");
-    }
 
-    // Function to hide the cookie banner
-    function hideCookieBanner() {
-      document.getElementById("cookie-banner").style.display = "none";
-      console.log("Cookie banner hidden");
-    }
 
-    // Check if the user has already accepted cookies
-    if (!getCookie("cookies_accepted")) {
-      document.getElementById("cookie-banner").style.display = "block";
-      document
-        .getElementById("accept-cookies")
-        .addEventListener("click", acceptCookies);
-    }
+
+
+
   })
   .catch((error) =>
     console.error("Error loading cookie HTML:", error)
