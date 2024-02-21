@@ -5,4 +5,3 @@ fetch("/components/NavBar/navigationBar.html")
     // Inserisci il contenuto della navbar nell'elemento con l'id "navbar"
     document.getElementById("NavBar").innerHTML = html;
   });
-

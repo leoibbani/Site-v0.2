@@ -3,7 +3,6 @@ fetch("/components/cookies/cookies.html")
   .then((html) => {
     // Append the fetched HTML content to the cookie-banner div
     document.getElementById("cookie-banner").innerHTML += html;
-    console.log("cookies loaded js");
 
     // Once the HTML is loaded, execute the following JavaScript
 
