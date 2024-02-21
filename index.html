@@ -22,26 +22,9 @@
 
 
 <body>
-  <!-- Cookies -->
-  <div class="cookies-eu-banner hidden border-top align-content-center">
-    Usiamo solo cookie necessari e Google Analytics, ci sta a ❤ la tua privacy.
-    <button class="btn btn-success">Grazie</button>
-  </div>
-
-  <!-- NavBar -->
-  <div style="width: 70%; margin: auto; margin-top: 20px;" class="fixed-top">
-    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist"
-      style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-      <li style="width: 35%;" class="nav-item" role="presentation">
-        <button onclick="location.href='/index.html'" class="nav-link active rounded-5" id="home-tab2"
-          data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-      </li>
-      <li style="width: 35%;" class="nav-item" role="presentation">
-        <button onclick="location.href='/album.html'" class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab"
-          type="button" role="tab" aria-selected="false">Album</button>
-      </li>
-    </ul>
-  </div>
+  
+  <div id="cookie-banner"></div>
+  <div id="NavBar"></div>
 
   <!-- Hero -->
   <div class="container col-xxl-8 px-4 py-5">
@@ -55,7 +38,8 @@
         <p id="lastname" class="lead mobilecenter">Web Developer</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" id="showmail" class="btn btn-primary btn-lg px-4 me-md-2">Contattami
-            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/envelope-arrow-up.svg" alt="envelope-arrow-up">
+            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/envelope-arrow-up.svg"
+              alt="envelope-arrow-up">
           </button>
           <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4"
             onclick="location.href='/services.html'">Scopri servizi</button>
@@ -76,7 +60,8 @@
         </div>
         <div>
           <h3 class="fs-2 text-body-emphasis">Personalizzazione</h3>
-          <p>Nessun costruttore o generatore significa nessun limite al modo in cui puoi personalizzare il tuo sito web, aprendo infinite possibilità.</p>
+          <p>Nessun costruttore o generatore significa nessun limite al modo in cui puoi personalizzare il tuo sito web,
+            aprendo infinite possibilità.</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
@@ -86,7 +71,8 @@
         </div>
         <div>
           <h3 class="fs-2 text-body-emphasis">Performance</h3>
-          <p>Sfruttando tutto il potenziale della programmazione è possibile costruire un sito ad alte prestazioni che si adatta ad ogni dispositivo</p>
+          <p>Sfruttando tutto il potenziale della programmazione è possibile costruire un sito ad alte prestazioni che
+            si adatta ad ogni dispositivo</p>
         </div>
       </div>
       <div class="col d-flex align-items-start">
@@ -96,7 +82,9 @@
         </div>
         <div>
           <h3 class="fs-2 text-body-emphasis">Facile da mantenere</h3>
-          <p>I siti Web programmati sono più facili da mantenere e aggiornare perché puoi modificare direttamente il codice sorgente e cambiarlo come desideri, senza fare affidamento su uno strumento o servizio di terze parti.</p>
+          <p>I siti Web programmati sono più facili da mantenere e aggiornare perché puoi modificare direttamente il
+            codice sorgente e cambiarlo come desideri, senza fare affidamento su uno strumento o servizio di terze
+            parti.</p>
         </div>
       </div>
     </div>
@@ -127,7 +115,8 @@
     <div class="d-flex justify-content-around align-items-center flex-wrap mobileonly pt-3">
       <img class=" my-3" width="75px" height="75px" src="/images/LB_logo_192.webp" alt="Logo">
       <img class=" my-3" width="35px" src="/icons/plus-lg.svg" alt="+">
-      <img class=" my-3" width="75px" height="75px" src="/icons/github.svg" alt="Github icon" onclick="location.href='https://github.com/LeonardoBani'">
+      <img class=" my-3" width="75px" height="75px" src="/icons/github.svg" alt="Github icon"
+        onclick="location.href='https://github.com/LeonardoBani'">
     </div>
     <h3 class="pt-3 text-center">Goditi un servizio di hosting unico grazie alla collaborazione con Github.</h3>
     <ul class="pt-3 text-left" style="list-style: circle;">
@@ -284,12 +273,13 @@
         <img class="bi mt-4 mb-3" src="/images/LB_logo_192.webp" width="100" height="100" alt="Leonardo Bani Logo">
         <h1 class="shower text-body-emphasis">Cosa stai aspettando?</h1>
         <p class="col-lg-8 mx-auto fs-5 text-muted">
-          Migliora la tua presenza online. Spiegami il tuo progetto e iniziamo a lavorare insieme!        </p>
+          Migliora la tua presenza online. Spiegami il tuo progetto e iniziamo a lavorare insieme! </p>
         <div class="d-inline-flex gap-2 mb-5">
           <button type="button"
             class="showmail d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill">
             Contattami
-            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/envelope-arrow-up.svg" alt="envelope-arrow-up">
+            <img class="bi ms-2 whitesvg" width="24" height="24" src="/icons/envelope-arrow-up.svg"
+              alt="envelope-arrow-up">
           </button>
         </div>
       </div>
@@ -316,23 +306,14 @@
 
 
   <!-- Footer -->
-  <footer class="d-flex text-center align-items-center py-3 m-auto border-top" style="max-width: 75%;">
-    <div class="text-center">
-      <code class=" mb-md-0">© 2023 Leonardo Bani</code>
-      <code class="m-1 mb-md-0 text-body-secondary">bani.leonardo@pec.it</code>
-      <code class="m-1 mb-md-0 text-body-secondary">07242570484</code>
-      <div class="align-content-">
-        <a class="text-body-secondary d-inline-block m-2" href="https://linkedin.com/in/leonardo-bani/"><img class="bi"
-            width="24" height="24" src="/icons/linkedin.svg" alt="Linkedin Icon">
-        <a class="text-body-secondary d-inline-block m-2" href="https://github.com/leonardobani"><img class="bi"
-          width="24" height="24" src="/icons/github.svg" alt="Github Icon">
-      </div>
-    </div>
-  </footer>
+  <div id="Footer"></div>
 
   <!-- javascript -->
-  <script src="/javascript/main.js"></script>
-  <script src="/javascript/coockies.js"></script>
+  <script src="/components/NavBar/navigationBar.js" async></script>
+  <script src="/components/cookies/cookies.js"></script>
+  <script src="/components/footer/footer.js" async></script>
+  <script src="/javascript/main.js" async></script>
+
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TW8S73GZW"></script>
