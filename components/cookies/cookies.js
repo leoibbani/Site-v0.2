@@ -15,6 +15,7 @@ fetch("/components/cookies/cookies.html")
         expires = "; expires=" + date.toUTCString();
       }
       document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      console.log("setCookie");
     }
 
     // Function to check if a cookie exists
@@ -30,6 +31,7 @@ fetch("/components/cookies/cookies.html")
           return cookie.substring(nameEQ.length, cookie.length);
         }
       }
+      console.log("getCookie");
       return null;
     }
 
@@ -37,11 +39,13 @@ fetch("/components/cookies/cookies.html")
     function acceptCookies() {
       setCookie("cookies_accepted", "true", 30); // Set cookie for 30 days
       hideCookieBanner();
+      console.log("Cookie banner accepted");
     }
 
     // Function to hide the cookie banner
     function hideCookieBanner() {
       document.getElementById("cookie-banner").style.display = "none";
+      console.log("Cookie banner hidden");
     }
 
     // Check if the user has already accepted cookies
